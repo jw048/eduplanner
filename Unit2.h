@@ -1,0 +1,129 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit2H
+#define Unit2H
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+//---------------------------------------------------------------------------
+class TForm2 : public TForm
+{
+__published:	// IDE-managed Components
+	TLabel *Label1;
+	TLabel *Label2;
+	TLabel *Label3;
+	TLabel *Label5;
+	TLabel *Label6;
+	TLabel *Label7;
+	TLabel *Label9;
+	TLabel *Label15;
+	TGroupBox *GroupBox1;
+	TLabel *Label8;
+	TLabel *Label10;
+	TLabel *Label11;
+	TLabel *Label12;
+	TLabel *Label13;
+	TLabel *Label14;
+	TComboBox *ComboBox1;
+	TComboBox *ComboBox2;
+	TGroupBox *GroupBox2;
+	TLabel *Label16;
+	TGroupBox *GroupBox3;
+	TLabel *Label17;
+	TGroupBox *GroupBox4;
+	TLabel *Label18;
+	TComboBox *ComboBox3;
+	TComboBox *ComboBox4;
+	TComboBox *ComboBox21;
+	TComboBox *ComboBox12;
+	TGroupBox *GroupBox5;
+	TLabel *Label19;
+	TComboBox *ComboBox5;
+	TComboBox *ComboBox6;
+	TComboBox *ComboBox7;
+	TComboBox *ComboBox8;
+	TComboBox *ComboBox9;
+	TComboBox *ComboBox10;
+	TComboBox *ComboBox11;
+	TComboBox *ComboBox22;
+	TGroupBox *GroupBox10;
+	TLabel *Label20;
+	TLabel *Label21;
+	TLabel *Label22;
+	TLabel *Label24;
+	TLabel *Label23;
+	TLabel *Label26;
+	TLabel *Label25;
+	TLabel *Label27;
+	TLabel *Label40;
+	TGroupBox *GroupBox6;
+	TLabel *Label28;
+	TGroupBox *GroupBox7;
+	TLabel *Label29;
+	TGroupBox *GroupBox8;
+	TLabel *Label30;
+	TComboBox *ComboBox13;
+	TComboBox *ComboBox14;
+	TComboBox *ComboBox15;
+	TComboBox *ComboBox16;
+	TGroupBox *GroupBox9;
+	TLabel *Label31;
+	TComboBox *ComboBox18;
+	TComboBox *ComboBox19;
+	TComboBox *ComboBox20;
+	TComboBox *ComboBox23;
+	TComboBox *ComboBox24;
+	TComboBox *ComboBox25;
+	TComboBox *ComboBox26;
+	TComboBox *ComboBox17;
+	TGroupBox *GroupBox11;
+	TLabel *Label32;
+	TLabel *Label33;
+	TLabel *Label34;
+	TLabel *Label35;
+	TLabel *Label36;
+	TLabel *Label37;
+	TLabel *Label38;
+	TLabel *Label39;
+	TLabel *Label41;
+	void __fastcall ComboBox12Change(TObject *Sender);
+	void __fastcall ComboBox3Change(TObject *Sender);
+	void __fastcall ComboBox4Change(TObject *Sender);
+	void __fastcall ComboBox16Change(TObject *Sender);
+	void __fastcall ComboBox13Change(TObject *Sender);
+	void __fastcall ComboBox14Change(TObject *Sender);
+	void __fastcall ComboBox1Change(TObject *Sender);
+	void __fastcall ComboBox2Change(TObject *Sender);
+	void __fastcall ComboBox21Change(TObject *Sender);
+	void __fastcall ComboBox9Change(TObject *Sender);
+	void __fastcall ComboBox5Change(TObject *Sender);
+	void __fastcall ComboBox6Change(TObject *Sender);
+	void __fastcall ComboBox7Change(TObject *Sender);
+	void __fastcall ComboBox8Change(TObject *Sender);
+	void __fastcall ComboBox18Change(TObject *Sender);
+	void __fastcall ComboBox17Change(TObject *Sender);
+	void __fastcall ComboBox26Change(TObject *Sender);
+	void __fastcall ComboBox19Change(TObject *Sender);
+	void __fastcall ComboBox20Change(TObject *Sender);
+	void __fastcall ComboBox22Change(TObject *Sender);
+
+private:	// User declarations
+public:		// User declarations
+	int summerCredit;
+	int summerTotal;
+    bool isupdating;
+
+	bool IsRealSelection(TComboBox* cb);
+	int GetSemesterCredit(String course);
+	void UpdateAllCredits();
+	double GetAPCredit(String course);
+	int GetCredits(String course);
+	void UpdateSummerCredits();
+	__fastcall TForm2(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm2 *Form2;
+//---------------------------------------------------------------------------
+#endif
