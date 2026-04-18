@@ -21,7 +21,7 @@ void __fastcall TForm5::FormShow(TObject *Sender)
 	int c = 0, slot = 0, i, j;
 	na = Form4->name;
 	welcomel->Caption = "Welcome "+na+"!";
-	RESTClient1->BaseURL = "http://127.0.0.1:8000/adtimemod/date/time/"+na+"/prt";
+	RESTClient1->BaseURL = "http://44.215.161.145/adtimemod/date/time/"+na+"/prt";
 	RESTRequest1->Execute();
 	ch = RESTResponse1->Content;
 	c = ch.Pos('{');
@@ -58,7 +58,7 @@ void __fastcall TForm5::addbtnClick(TObject *Sender)
 	d = dateadd->Date;
 	t = timeadd->Text;
 	na = Form4->name;
-	RESTClient1->BaseURL = "http://127.0.0.1:8000/adtimemod/"+d+"/"+t+"/"+na+"/add";
+	RESTClient1->BaseURL = "http://44.215.161.145/adtimemod/"+d+"/"+t+"/"+na+"/add";
 	RESTRequest1->Execute();
 	rt = RESTResponse1->Content;
 	ShowMessage(rt);
@@ -70,7 +70,7 @@ void __fastcall TForm5::deletebtnClick(TObject *Sender)
 	d = datedelete->Date;
 	t = timedelete->Text;
 	na = Form4->name;
-	RESTClient1->BaseURL = "http://127.0.0.1:8000/adtimemod/"+d+"/"+t+"/"+na+"/delete";
+	RESTClient1->BaseURL = "http://44.215.161.145/adtimemod/"+d+"/"+t+"/"+na+"/delete";
 	RESTRequest1->Execute();
 	rt = RESTResponse1->Content;
 	ShowMessage(rt);

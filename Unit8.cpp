@@ -23,7 +23,7 @@ void __fastcall TForm8::FormShow(TObject *Sender)
 	String nm, ch, temp, val_temp[1000]={};
 	int c = 0, mt = 0, i, j;
 	nm = Form4->name;
-	RESTClient1->BaseURL = "http://127.0.0.1:8000/stmeetcheck/"+nm;
+	RESTClient1->BaseURL = "http://44.215.161.145/stmeetcheck/"+nm;
 	RESTRequest1->Execute();
 	ch = RESTResponse1->Content;
 	c = ch.Pos("[");
@@ -58,7 +58,7 @@ void __fastcall TForm8::dateselectbtnClick(TObject *Sender)
 	String avil, temp, val_temp[1000]={};
 	int c, cnt, i, j;
 	dte = schecalendar->Date;
-	RESTClient2->BaseURL = "http://127.0.0.1:8000/mtngprt/"+dte;
+	RESTClient2->BaseURL = "http://44.215.161.145/mtngprt/"+dte;
 	RESTRequest2->Execute();
 	avil = RESTResponse2->Content;
 	c = avil.Pos('[');
@@ -96,15 +96,15 @@ void __fastcall TForm8::schedulebtnClick(TObject *Sender)
     String tm, rt;
 	tm = mtnglist->Items->Strings[mtnglist->ItemIndex];
 	ShowMessage(tm);
-	RESTClient3->BaseURL = "http://127.0.0.1:8000/stmeetapp/"+adname[mtnglist->ItemIndex]+"/"+dte+"/"+tm+"/"+Form4->name;
+	RESTClient3->BaseURL = "http://44.215.161.145/stmeetapp/"+adname[mtnglist->ItemIndex]+"/"+dte+"/"+tm+"/"+Form4->name;
 	RESTRequest3->Execute();
 	rt = RESTResponse3->Content;
 	ShowMessage(rt);
-	RESTClient4->BaseURL = "http://127.0.0.1:8000/confirmemail/"+Form4->name+"/"+dte+"/"+tm+"/st";
+	RESTClient4->BaseURL = "http://44.215.161.145/confirmemail/"+Form4->name+"/"+dte+"/"+tm+"/st";
 	RESTRequest4->Execute();
 	rt = RESTResponse4->Content;
 	ShowMessage(rt);
-	RESTClient4->BaseURL = "http://127.0.0.1:8000/confirmemail/"+Form4->name+"/"+dte+"/"+tm+"/ad";
+	RESTClient4->BaseURL = "http://44.215.161.145/confirmemail/"+Form4->name+"/"+dte+"/"+tm+"/ad";
 	RESTRequest4->Execute();
 	rt = RESTResponse4->Content;
 	ShowMessage(rt);

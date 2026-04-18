@@ -33,7 +33,7 @@ void __fastcall TForm6::gpabtnClick(TObject *Sender)
 void __fastcall TForm6::csbtnClick(TObject *Sender)
 {
 	int c;
-	RESTClient1->BaseURL = "http://127.0.0.1:8000/detergrade/"+Form4->name;
+	RESTClient1->BaseURL = "http://44.215.161.145/detergrade/"+Form4->name;
 	RESTRequest1->Execute();
 	detergrade = RESTResponse1->Content;
 	c = detergrade.Pos(":");

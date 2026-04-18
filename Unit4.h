@@ -35,7 +35,14 @@ __published:	// IDE-managed Components
 	TRESTResponse *RESTResponse1;
 	TRESTResponseDataSetAdapter *RESTResponseDataSetAdapter1;
 	TFDMemTable *FDMemTable1;
+	TRESTClient *RESTClient2;
+	TRESTRequest *RESTRequest2;
+	TRESTResponse *RESTResponse2;
+	TRESTResponseDataSetAdapter *RESTResponseDataSetAdapter2;
+	TFDMemTable *FDMemTable2;
+	TButton *Button1;
 	void __fastcall loginbtnClick(TObject *Sender);
+	void __fastcall Button1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm4(TComponent* Owner);

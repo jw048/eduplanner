@@ -23,7 +23,7 @@ void __fastcall TForm4::loginbtnClick(TObject *Sender)
 	String ad;
 	username = usernameed->Text;
 	passcode = passcodeed->Text;
-	RESTClient1->BaseURL = "http://127.0.0.1:8000/login/"+username+"/"+passcode+"/N";
+	RESTClient1->BaseURL = "http://44.215.161.145/login/"+username+"/"+passcode+"/N";
 	RESTRequest1->Execute();
 	name = RESTResponse1->Content;
 	c = name.Pos(":");
@@ -36,7 +36,7 @@ void __fastcall TForm4::loginbtnClick(TObject *Sender)
 		Label1->Caption = "Login Failure";
 	}
 	else{
-		RESTClient1->BaseURL = "http://127.0.0.1:8000/login/"+username+"/"+passcode+"/Y";
+		RESTClient1->BaseURL = "http://44.215.161.145/login/"+username+"/"+passcode+"/Y";
 		RESTRequest1->Execute();
 		ad = RESTResponse1->Content;
 		c = ad.Pos(":");
@@ -56,3 +56,12 @@ void __fastcall TForm4::loginbtnClick(TObject *Sender)
 	}
 }
 //---------------------------------------------------------------------------
+
+void __fastcall TForm4::Button1Click(TObject *Sender)
+{
+	RESTClient2->BaseURL = "http://44.215.161.145/test/emmapark0202";
+	RESTRequest2->Execute();
+	ShowMessage(RESTResponse1->Content);
+}
+//---------------------------------------------------------------------------
+

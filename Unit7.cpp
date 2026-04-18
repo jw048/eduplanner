@@ -22,7 +22,7 @@ void __fastcall TForm7::startbtnClick(TObject *Sender)
 	String coursename, n, grades, scale, all_gpa[1000]={}, rt_courses, all_courses[1000]={};
 	int avg_grade =0, check, total =0, i=0, num_courses = 0;
 	n = Form4->name;
-	RESTClient2->BaseURL = "http://127.0.0.1:8000/courses/"+n;
+	RESTClient2->BaseURL = "http://44.215.161.145/courses/"+n;
 	RESTRequest2->Execute();
 	rt_courses = RESTResponse2->Content;
 	check = rt_courses.Pos('"');
@@ -36,10 +36,10 @@ void __fastcall TForm7::startbtnClick(TObject *Sender)
 	}
 	for (i = 0; i < total; i++) {
 		coursename = all_courses[i];
-		RESTClient1->BaseURL = "http://127.0.0.1:8000/tot_gpa/"+Form4->name+"/"+coursename+"/yes";
+		RESTClient1->BaseURL = "http://44.215.161.145/tot_gpa/"+Form4->name+"/"+coursename+"/yes";
 		RESTRequest1->Execute();
 		scale = RESTResponse1->Content;
-		RESTClient1->BaseURL = "http://127.0.0.1:8000/tot_gpa/"+Form4->name+"/"+coursename+"/no";
+		RESTClient1->BaseURL = "http://44.215.161.145/tot_gpa/"+Form4->name+"/"+coursename+"/no";
 		RESTRequest1->Execute();
 		grades = RESTResponse1->Content;
 		if (grades != "false") {
@@ -52,13 +52,13 @@ void __fastcall TForm7::startbtnClick(TObject *Sender)
 			gradesmemo->Lines->Add("");
 		}
 		if (scale == "*Warning*") {
-			RESTClient3->BaseURL = "http://127.0.0.1:8000/warningemail/"+n+"/"+grades+"/"+coursename;
+			RESTClient3->BaseURL = "http://44.215.161.145/warningemail/"+n+"/"+grades+"/"+coursename;
 			RESTRequest3->Execute();
 			ShowMessage("Warning Email sent - "+coursename+" ( "+grades+" )");
 			w++;
 		}
 		if (scale == "*Danger; meeting with counselor required*") {
-			RESTClient3->BaseURL = "http://127.0.0.1:8000/dangeremail/"+n+"/"+grades+"/"+coursename;
+			RESTClient3->BaseURL = "http://44.215.161.145/dangeremail/"+n+"/"+grades+"/"+coursename;
 			RESTRequest3->Execute();
 			ShowMessage("GPA 'Danger'level notification Email sent - "+coursename+" ( "+grades+" )");
 			d++;
