@@ -96,7 +96,7 @@ object Form1: TForm1
   object Label15: TLabel
     Left = 32
     Top = 397
-    Width = 233
+    Width = 200
     Height = 95
     Caption = 
       '        Sophomore Reminders '#13#10'Seniors are required to take two'#13#10 +
@@ -165,6 +165,7 @@ object Form1: TForm1
       Height = 23
       TabOrder = 0
       Text = 'Summer #1 (Optional)'
+      OnChange = ComboBox1Change
       Items.Strings = (
         'Academic Literacy'
         'Algebra 1 (A year course)'
@@ -183,6 +184,7 @@ object Form1: TForm1
       Height = 23
       TabOrder = 1
       Text = 'Summer #2 (Optional)'
+      OnChange = ComboBox2Change
       Items.Strings = (
         'Academic Literacy'
         'Algebra 1 (A year course)'
@@ -249,6 +251,7 @@ object Form1: TForm1
         Height = 23
         TabOrder = 0
         Text = 'Select Subjects'
+        OnChange = ComboBox3Change
         Items.Strings = (
           'Business'
           'Computer Science'
@@ -264,6 +267,7 @@ object Form1: TForm1
         Height = 23
         TabOrder = 1
         Text = 'Select Subjects'
+        OnChange = ComboBox4Change
         Items.Strings = (
           'Business'
           'Computer Science'
@@ -290,6 +294,7 @@ object Form1: TForm1
         Height = 23
         TabOrder = 3
         Text = 'Select Subjects'
+        OnChange = ComboBox12Change
         Items.Strings = (
           'Business'
           'Computer Science'
@@ -321,6 +326,7 @@ object Form1: TForm1
       Height = 23
       TabOrder = 3
       Text = 'Chooses Class'
+      OnChange = ComboBox5Change
       Items.Strings = (
         'Sophomore English AC'
         'Sophomore English')
@@ -332,6 +338,7 @@ object Form1: TForm1
       Height = 23
       TabOrder = 4
       Text = 'Choose Class'
+      OnChange = ComboBox6Change
       Items.Strings = (
         'Geometry'
         'Geometry AB/BC'
@@ -346,6 +353,7 @@ object Form1: TForm1
       Height = 23
       TabOrder = 5
       Text = 'Choose Class'
+      OnChange = ComboBox7Change
       Items.Strings = (
         'Biology'
         'Chemistry'
@@ -360,6 +368,7 @@ object Form1: TForm1
       Height = 23
       TabOrder = 6
       Text = 'Choose Class'
+      OnChange = ComboBox8Change
       Items.Strings = (
         'Psychology'
         'US history'
@@ -397,6 +406,7 @@ object Form1: TForm1
       Height = 23
       TabOrder = 10
       Text = 'Chooses Class'
+      OnChange = ComboBox22Change
       Items.Strings = (
         'Early Bird PE'
         'Early Bird Science')
@@ -536,6 +546,7 @@ object Form1: TForm1
         Height = 23
         TabOrder = 0
         Text = 'Select Subjects'
+        OnChange = ComboBox13Change
         Items.Strings = (
           'Business'
           'Computer Science'
@@ -551,6 +562,7 @@ object Form1: TForm1
         Height = 23
         TabOrder = 1
         Text = 'Select Subjects'
+        OnChange = ComboBox14Change
         Items.Strings = (
           'Business'
           'Computer Science'
@@ -577,6 +589,7 @@ object Form1: TForm1
         Height = 23
         TabOrder = 3
         Text = 'Select Subjects'
+        OnChange = ComboBox16Change
         Items.Strings = (
           'Business'
           'Computer Science'
@@ -608,6 +621,7 @@ object Form1: TForm1
       Height = 23
       TabOrder = 3
       Text = 'Choose Class'
+      OnChange = ComboBox18Change
       Items.Strings = (
         'Geometry'
         'Geometry AB/BC'
@@ -622,6 +636,7 @@ object Form1: TForm1
       Height = 23
       TabOrder = 4
       Text = 'Choose Class'
+      OnChange = ComboBox19Change
       Items.Strings = (
         'Biology'
         'Chemistry'
@@ -673,6 +688,7 @@ object Form1: TForm1
       Height = 23
       TabOrder = 9
       Text = 'Chooses Class'
+      OnChange = ComboBox26Change
       Items.Strings = (
         'Early Bird PE'
         'Early Bird Science')
@@ -684,6 +700,7 @@ object Form1: TForm1
       Height = 23
       TabOrder = 10
       Text = 'Chooses Class'
+      OnChange = ComboBox17Change
       Items.Strings = (
         'AP language'
         'AP journalism'
