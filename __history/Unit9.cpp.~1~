@@ -12,15 +12,13 @@
 TForm9 *Form9;
 int totalCredits1;
 int summerTotal1;
-
-int summerCredits = 0;
-int regularCredits = 0;
 //---------------------------------------------------------------------------
 __fastcall TForm9::TForm9(TComponent* Owner)
 	: TForm(Owner)
 {
-	isUpdating = false;
+    isUpdating = false;
 
+	// reset all ComboBoxes
 	for (int i = 0; i < ComponentCount; i++)
 	{
 		TComboBox *cb = dynamic_cast<TComboBox*>(Components[i]);

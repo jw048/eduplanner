@@ -29,7 +29,6 @@ object Form4: TForm4
     Top = 181
     Width = 121
     Height = 23
-    PasswordChar = '*'
     TabOrder = 1
   end
   object loginbtn: TButton
