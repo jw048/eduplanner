@@ -57,3 +57,11 @@ void __fastcall TForm4::loginbtnClick(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TForm4::Button1Click(TObject *Sender)
+{
+	RESTClient2->BaseURL = "http://44.215.161.145/test/emmapark0202";
+	RESTRequest2->Execute();
+	ShowMessage(RESTResponse1->Content);
+}
+//---------------------------------------------------------------------------
+

@@ -39,9 +39,7 @@ void __fastcall TForm6::csbtnClick(TObject *Sender)
 	c = detergrade.Pos(":");
 	detergrade = detergrade.Delete(1,c);
 	c = detergrade.Pos("}");
-	detergrade = detergrade.SubString(1,c-1);
-	ShowMessage(detergrade);
-    detergrade=1;
+    detergrade = detergrade.SubString(1,c-1);
 	if (detergrade == "1") {
 		Form9->Show();
 	}
