@@ -58,28 +58,6 @@ object Form2: TForm2
     Width = 3
     Height = 15
   end
-  object Label6: TLabel
-    Left = 744
-    Top = 86
-    Width = 217
-    Height = 27
-    Caption = 'Recommended Courses'
-    Color = clBlack
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -19
-    Font.Name = 'Noto Sans KR'
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-  end
-  object Label7: TLabel
-    Left = 750
-    Top = 132
-    Width = 34
-    Height = 15
-    Caption = 'Label7'
-  end
   object Label9: TLabel
     Left = 64
     Top = 208
@@ -96,7 +74,7 @@ object Form2: TForm2
   object Label15: TLabel
     Left = 24
     Top = 405
-    Width = 233
+    Width = 200
     Height = 95
     Caption = 
       '           Junior Reminders '#13#10'Seniors are required to take two'#13#10 +

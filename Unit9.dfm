@@ -57,28 +57,6 @@ object Form9: TForm9
     Width = 3
     Height = 15
   end
-  object Label6: TLabel
-    Left = 752
-    Top = 78
-    Width = 217
-    Height = 27
-    Caption = 'Recommended Courses'
-    Color = clBlack
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -19
-    Font.Name = 'Noto Sans KR'
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-  end
-  object Label7: TLabel
-    Left = 758
-    Top = 124
-    Width = 34
-    Height = 15
-    Caption = 'Label7'
-  end
   object Label9: TLabel
     Left = 72
     Top = 200
@@ -95,7 +73,7 @@ object Form9: TForm9
   object Label15: TLabel
     Left = 32
     Top = 400
-    Width = 249
+    Width = 215
     Height = 95
     Caption = 
       '            Freshman Reminders '#13#10'Freshmans are required to take ' +
@@ -164,6 +142,7 @@ object Form9: TForm9
       Height = 23
       TabOrder = 0
       Text = 'Summer #1 (Optional)'
+      OnChange = ComboBox1Change
       Items.Strings = (
         'Academic Literacy'
         'Algebra 1 (A year course)'
@@ -182,6 +161,7 @@ object Form9: TForm9
       Height = 23
       TabOrder = 1
       Text = 'Summer #2 (Optional)'
+      OnChange = ComboBox2Change
       Items.Strings = (
         'Academic Literacy'
         'Algebra 1 (A year course)'
@@ -295,6 +275,7 @@ object Form9: TForm9
       Height = 23
       TabOrder = 3
       Text = 'Chooses Class'
+      OnChange = ComboBox5Change
       Items.Strings = (
         'Freshman English'
         'Freshman English AC'

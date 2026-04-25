@@ -58,28 +58,6 @@ object Form1: TForm1
     Width = 3
     Height = 15
   end
-  object Label6: TLabel
-    Left = 752
-    Top = 78
-    Width = 217
-    Height = 27
-    Caption = 'Recommended Courses'
-    Color = clBlack
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -19
-    Font.Name = 'Noto Sans KR'
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-  end
-  object Label7: TLabel
-    Left = 758
-    Top = 124
-    Width = 34
-    Height = 15
-    Caption = 'Label7'
-  end
   object Label9: TLabel
     Left = 72
     Top = 200

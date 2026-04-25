@@ -15,8 +15,6 @@ __published:	// IDE-managed Components
 	TLabel *Label2;
 	TLabel *Label3;
 	TLabel *Label5;
-	TLabel *Label6;
-	TLabel *Label7;
 	TLabel *Label9;
 	TLabel *Label15;
 	TGroupBox *GroupBox1;

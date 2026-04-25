@@ -1,4 +1,5 @@
-.\Win64x\Debug\Unit8.o: C:\technovationgirls_final\Project\ 1PCH1.h \
+.\Win64x\Debug\Unit8.o: \
+  C:\Users\admin\OneDrive\문서\카카오톡\ 받은\ 파일\eduplanner-main\eduplanner-main\Project\ 1PCH1.h \
   c:\program\ files\ (x86)\embarcadero\studio\23.0\include\windows\vcl\vcl.h \
   c:\program\ files\ (x86)\embarcadero\studio\23.0\include\windows\vcl\basepch0.h \
   c:\program\ files\ (x86)\embarcadero\studio\23.0\include\windows\rtl\System.hpp \
@@ -969,7 +970,8 @@
   c:\program\ files\ (x86)\embarcadero\studio\23.0\include\windows\vcl\Vcl.ListActns.hpp \
   c:\program\ files\ (x86)\embarcadero\studio\23.0\include\x86_64-w64-mingw32\tchar.h \
   c:\program\ files\ (x86)\embarcadero\studio\23.0\include\x86_64-w64-mingw32\sec_api\tchar_s.h \
-  Unit8.cpp C:\technovationgirls_final\Unit4.h \
+  Unit8.cpp \
+  C:\Users\admin\OneDrive\문서\카카오톡\ 받은\ 파일\eduplanner-main\eduplanner-main\Unit4.h \
   c:\program\ files\ (x86)\embarcadero\studio\23.0\include\windows\rtl\Data.Bind.Components.hpp \
   c:\program\ files\ (x86)\embarcadero\studio\23.0\include\windows\rtl\System.Bindings.Expression.hpp \
   c:\program\ files\ (x86)\embarcadero\studio\23.0\include\windows\rtl\System.Bindings.EvalProtocol.hpp \
@@ -1025,5 +1027,6 @@
   c:\program\ files\ (x86)\embarcadero\studio\23.0\include\windows\rtl\System.DateUtils.hpp \
   c:\program\ files\ (x86)\embarcadero\studio\23.0\include\windows\rtl\System.JSON.Builders.hpp \
   c:\program\ files\ (x86)\embarcadero\studio\23.0\include\windows\rtl\Data.DBJson.hpp \
-  C:\technovationgirls_final\Unit6.h C:\technovationgirls_final\Unit7.h \
-  C:\technovationgirls_final\Unit8.h
+  C:\Users\admin\OneDrive\문서\카카오톡\ 받은\ 파일\eduplanner-main\eduplanner-main\Unit6.h \
+  C:\Users\admin\OneDrive\문서\카카오톡\ 받은\ 파일\eduplanner-main\eduplanner-main\Unit7.h \
+  C:\Users\admin\OneDrive\문서\카카오톡\ 받은\ 파일\eduplanner-main\eduplanner-main\Unit8.h

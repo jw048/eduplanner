@@ -1,4 +1,5 @@
-.\Win64x\Debug\Project 1.o: C:\technovationgirls_final\Project\ 1PCH1.h \
+.\Win64x\Debug\Project 1.o: \
+  C:\Users\admin\OneDrive\문서\카카오톡\ 받은\ 파일\eduplanner-main\eduplanner-main\Project\ 1PCH1.h \
   c:\program\ files\ (x86)\embarcadero\studio\23.0\include\windows\vcl\vcl.h \
   c:\program\ files\ (x86)\embarcadero\studio\23.0\include\windows\vcl\basepch0.h \
   c:\program\ files\ (x86)\embarcadero\studio\23.0\include\windows\rtl\System.hpp \

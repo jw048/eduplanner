@@ -12,15 +12,13 @@
 TForm9 *Form9;
 int totalCredits1;
 int summerTotal1;
-
-int summerCredits = 0;
-int regularCredits = 0;
 //---------------------------------------------------------------------------
 __fastcall TForm9::TForm9(TComponent* Owner)
 	: TForm(Owner)
 {
-	isUpdating = false;
+    isUpdating = false;
 
+	// reset all ComboBoxes
 	for (int i = 0; i < ComponentCount; i++)
 	{
 		TComboBox *cb = dynamic_cast<TComboBox*>(Components[i]);
@@ -93,11 +91,8 @@ Label11->Caption = IntToStr(credit1);
 Label12->Caption = IntToStr(credit2);
 
 // Update totals
-summerCredits = credit1 + credit2;
-Label3->Caption = IntToStr(summerCredits + regularCredits);
-
-//totalCredits1 = credit1 + credit2;
-//Label3->Caption = IntToStr(totalCredits1);
+totalCredits1 = credit1 + credit2;
+Label3->Caption = IntToStr(totalCredits1);
 
 // Summer total = count of selected courses
 summerTotal1 = 0;
