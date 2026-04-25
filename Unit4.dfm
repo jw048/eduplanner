@@ -29,6 +29,7 @@ object Form4: TForm4
     Top = 181
     Width = 121
     Height = 23
+    PasswordChar = '*'
     TabOrder = 1
   end
   object loginbtn: TButton
@@ -39,15 +40,6 @@ object Form4: TForm4
     Caption = 'LOGIN'
     TabOrder = 2
     OnClick = loginbtnClick
-  end
-  object Button1: TButton
-    Left = 496
-    Top = 80
-    Width = 75
-    Height = 25
-    Caption = 'Button1'
-    TabOrder = 3
-    OnClick = Button1Click
   end
   object RESTClient1: TRESTClient
     BaseURL = 'http://44.215.161.145/login/emmapark0202/EmmaPark0202%21'
